@@ -38,6 +38,7 @@ def start(bot, update):
     """Send a message when the command /help is issued."""
     update.message.reply_text('Ciao! Benvenuto nell helper bot di FORZA MORDOR')
     update.message.reply_text('digita /start per tornare al menu')
+    update.message.reply_text('digita /basi per la guida alle BASI del gioco')
     update.message.reply_text('digita /potenziamento per la guida POTENZIAMENTO')
     update.message.reply_text('digita /arene per la guida alle ARENE')
     update.message.reply_text('digita /gorvin per la guida a GORVIN')
@@ -51,6 +52,13 @@ def gorvin(bot, update):
 def rianimare(bot, update):
     """Send a message when the command /rianimare is issued."""
     update.message.reply_text('RIANIMARE: Io preferisco rianimare a ragion veduta, se gli altri sono carichi di vita conviene aspettare un buon momento in cui non sono tutti lì e tu guadagni tempo X attaccare non vista o aspetto l’attimo fuggente con dps vicino e uccidibile in volata. Se si gioca con uno in meno gli orchi si caricano prima. Ia scelta del momento fa spesso la differenza esercitatevi ( in pub) Raramente serve a far guadagnare tempo al dps, se si distraggono e lui riesce a fuggire o addirittura a prendere un buff vale la pena di farlo ,di solito io poi muoio ma se si vince la partita ben venga by Ocelot')
+    update.message.reply_text('digita /start per tornare al menu')
+
+def basi(bot, update):
+    """Send a message when the command /basi is issued."""
+    update.message.reply_text('Tank= corazza o scudo prende le botte e muore difficilmente')
+    update.message.reply_text('Dps = danno elevato è di 2 tipi, A bersaglio :dart: (cele gorvin i migliori), Ad area ( arwen migliore poi saruman)')
+    update.message.reply_text('Healer = curatoreura ma è deboluccio è indispensabile in battaglia ( migliore hallas)')
     update.message.reply_text('digita /start per tornare al menu')
 
 def arene(bot,update):
@@ -81,6 +89,7 @@ def main():
     dp.add_handler(CommandHandler("arene", arene))
     dp.add_handler(CommandHandler("gorvin", gorvin))
     dp.add_handler(CommandHandler("rianimare", rianimare))
+    dp.add_handler(CommandHandler("basi", basi))
 
     # log all errors
     dp.add_error_handler(error)
