@@ -1,6 +1,5 @@
 Package             Version  
 ------------------- ---------
-APScheduler         3.5.1    
 certifi             2018.4.16
 chardet             3.0.4    
 future              0.16.0   
