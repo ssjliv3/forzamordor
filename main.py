@@ -38,12 +38,12 @@ def help(bot, update):
 def start(bot, update):
     """Send a message when the command /help is issued."""
     update.message.reply_text('Ciao! Benvenuto nell helper bot di FORZA MORDOR'+emoji.emojize(' :city_sunrise:', use_aliases=True))
-    update.message.reply_text('digita /start per tornare al menu'+emoji.emojize(' :two_hearts:', use_aliases=True))
-    update.message.reply_text('digita /basi per la guida alle BASI del gioco'+emoji.emojize(' :star:', use_aliases=True))
-    update.message.reply_text('digita /potenziamento per la guida POTENZIAMENTO'+emoji.emojize(' :boom:', use_aliases=True))
-    update.message.reply_text('digita /arene per la guida alle ARENE'+emoji.emojize(' :fire:', use_aliases=True))
-    update.message.reply_text('digita /gorvin per la guida a GORVIN'+emoji.emojize(' :hocho:', use_aliases=True))
-    update.message.reply_text('digita /rianimare per la guida a RIANIMARE'+emoji.emojize(' :angel:', use_aliases=True))
+    update.message.reply_text('/start per tornare al menu'+emoji.emojize(' :two_hearts:', use_aliases=True))
+    update.message.reply_text('/basi per la guida alle BASI del gioco'+emoji.emojize(' :star:', use_aliases=True))
+    update.message.reply_text('/potenziamento per la guida POTENZIAMENTO'+emoji.emojize(' :boom:', use_aliases=True))
+    update.message.reply_text('/arene per la guida alle ARENE'+emoji.emojize(' :fire:', use_aliases=True))
+    update.message.reply_text('/gorvin per la guida a GORVIN'+emoji.emojize(' :hocho:', use_aliases=True))
+    update.message.reply_text('/rianimare per la guida a RIANIMARE'+emoji.emojize(' :angel:', use_aliases=True))
 
 def gorvin(bot, update):
     """Send a message when the command /gorvin is issued."""
